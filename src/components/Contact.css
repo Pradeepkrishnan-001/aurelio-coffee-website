@@ -1,0 +1,146 @@
+
+.contact-section {
+    padding: 75px 7% 25px;
+    background: #263B32;
+    color: #F8F1E7;
+}
+
+/* Heading */
+.contact-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.contact-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    color: #C5A36A;
+}
+
+.contact-section h2 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: #F8F1E7;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #D5CBBE;
+    line-height: 1.9;
+}
+
+/* Contact Details and Map */
+.contact-main {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 55px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: stretch;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+    align-content: center;
+}
+
+.contact-item h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    color: #D6B779;
+}
+
+.contact-item p {
+    font-size: 15px;
+    line-height: 2;
+    color: #F0E6D9;
+}
+
+/* Google Map */
+.contact-map {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid #806B5B;
+    border-radius: 4px;
+}
+
+/* Footer */
+.contact-bottom {
+    text-align: center;
+    border-top: 1px solid #53685A;
+    margin-top: 65px;
+    padding-top: 30px;
+}
+
+.contact-bottom h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    letter-spacing: 6px;
+    color: #D6B779;
+    margin-bottom: 10px;
+}
+
+.contact-bottom p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #D5CBBE;
+    margin-bottom: 20px;
+}
+
+.contact-bottom span {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #B5A795;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 55px 6% 20px;
+    }
+
+    .contact-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-details {
+        gap: 30px 15px;
+    }
+
+    .contact-map {
+        height: 300px;
+    }
+
+    .contact-section h2 {
+        font-size: 38px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contact-details {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-map {
+        height: 260px;
+    }
+
+    .contact-section h2 {
+        font-size: 34px;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,333 @@
+
+/* ==============================
+   AURELIO - VISIT US PAGE
+================================ */
+
+.visit-page {
+    background: #f8f1e7;
+    color: #3b261b;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.visit-page * {
+    box-sizing: border-box;
+}
+
+/* HERO SECTION */
+
+.visit-hero {
+    position: relative;
+    min-height: 550px;
+    background:
+        linear-gradient(rgba(20, 14, 10, 0.48), rgba(20, 14, 10, 0.48)),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1600")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.visit-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.visit-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 750px;
+}
+
+.visit-hero-content > p {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+}
+
+.visit-hero-content h1 {
+    font-size: clamp(42px, 6vw, 70px);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.visit-hero-content span {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.visit-hero-button {
+    display: inline-block;
+    padding: 15px 32px;
+    border: 1px solid #d6b77a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.visit-hero-button:hover {
+    background: #d6b77a;
+    color: #2d1d14;
+}
+
+/* INTRO SECTION */
+
+.visit-intro {
+    max-width: 900px;
+    margin: auto;
+    padding: 85px 25px 65px;
+    text-align: center;
+}
+
+.visit-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #98734d;
+    margin-bottom: 22px;
+}
+
+.visit-intro h2,
+.visit-experience h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.visit-intro > p:last-child {
+    max-width: 720px;
+    margin: auto;
+    color: #786656;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* VISIT DETAILS */
+
+.visit-details {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 30px 80px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.visit-info {
+    padding: 20px 0;
+}
+
+.visit-info h2 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.visit-info p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #786656;
+}
+
+.visit-info .visit-location {
+    color: #98734d;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.visit-info h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 28px 0 18px;
+}
+
+.visit-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #705c4d;
+    line-height: 1.5;
+}
+
+.visit-map-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #3b261b;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+
+.visit-map-button:hover {
+    background: #98734d;
+}
+
+.visit-image {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+
+.visit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.visit-image img:hover {
+    transform: scale(1.04);
+}
+
+/* EXPERIENCE SECTION */
+
+.visit-experience {
+    background: #eee2d3;
+    padding: 85px 30px;
+    text-align: center;
+}
+
+.visit-experience h2 {
+    margin-bottom: 50px;
+}
+
+.visit-experience-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.visit-experience-card {
+    background: #fffaf3;
+    padding: 40px 25px;
+    border: 1px solid #e5d5c2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visit-experience-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(59, 38, 27, 0.09);
+}
+
+.visit-experience-card span {
+    display: block;
+    color: #a47d52;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.visit-experience-card h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.visit-experience-card p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #786656;
+}
+
+/* FINAL SECTION */
+
+.visit-ending {
+    padding: 85px 25px;
+    text-align: center;
+    background: #f8f1e7;
+}
+
+.visit-ending p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #98734d;
+    margin-bottom: 20px;
+}
+
+.visit-ending h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.visit-ending a {
+    display: inline-block;
+    padding: 15px 32px;
+    background: #3b261b;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    transition: 0.3s ease;
+}
+
+.visit-ending a:hover {
+    background: #98734d;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .visit-hero {
+        min-height: 450px;
+    }
+
+    .visit-intro {
+        padding: 65px 20px;
+    }
+
+    .visit-intro h2,
+    .visit-experience h2 {
+        font-size: 29px;
+    }
+
+    .visit-details {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 22px 60px;
+    }
+
+    .visit-info {
+        padding: 10px 0;
+    }
+
+    .visit-image {
+        height: 320px;
+    }
+
+    .visit-experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visit-ending h2 {
+        font-size: 28px;
+    }
+}
